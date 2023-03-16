@@ -1,6 +1,6 @@
 {
   "name": "@marchyang/openai",
-  "version": "3.2.2",
+  "version": "3.2.3",
   "description": "Node.js library for the OpenAI API",
   "repository": {
     "type": "url",
