@@ -19,7 +19,7 @@ import type { Configuration } from './configuration';
 import type { AxiosPromise, AxiosInstance, AxiosRequestConfig } from 'axios';
 import globalAxios from 'axios';
   
-const BASE_ORIGIN = global.OPENAI_BASE_ORIGIN || 'https://api.openai.com';
+const BASE_ORIGIN = process.env.OPENAI_BASE_ORIGIN || 'https://api.openai.com';
 export const BASE_PATH = BASE_ORIGIN +  "/v1".replace(/\/+$/, "");
 
 /**

@@ -15,7 +15,7 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.RequiredError = exports.BaseAPI = exports.COLLECTION_FORMATS = exports.BASE_PATH = void 0;
 const axios_1 = require("axios");
-const BASE_ORIGIN = global.OPENAI_BASE_ORIGIN || 'https://api.openai.com';
+const BASE_ORIGIN = process.env.OPENAI_BASE_ORIGIN || 'https://api.openai.com';
 exports.BASE_PATH = BASE_ORIGIN + "/v1".replace(/\/+$/, "");
 /**
  *
